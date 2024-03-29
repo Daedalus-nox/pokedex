@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import PokemonCard from './components/PokemonCard'
+import PropTypes from "prop-types";
+
 
 function App(pokemon) {
 
@@ -17,6 +19,12 @@ function App(pokemon) {
       name: "mew",
     },
   ];
+
+
+
+
+
+
 
   return (
     <>
