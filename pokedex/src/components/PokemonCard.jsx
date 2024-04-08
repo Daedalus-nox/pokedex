@@ -5,12 +5,7 @@ function PokemonCard({ pokemon }) {
     const { name, imgSrc } = pokemon
 
 
-    PokemonCard.propTypes = {
-        pokemon: PropTypes.shape({
-            name: PropTypes.string.isRequired,
-            imgSrc: PropTypes.string,
-        }).isRequired,
-    }
+    
 
 
     return (
@@ -21,7 +16,12 @@ function PokemonCard({ pokemon }) {
 
 
 }
-
+PokemonCard.propTypes = {
+    pokemon: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        imgSrc: PropTypes.string,
+    }).isRequired,
+}
 
 
 export default PokemonCard;
